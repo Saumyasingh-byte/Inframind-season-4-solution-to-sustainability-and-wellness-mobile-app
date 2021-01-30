@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="SIGN IN"
+        android:textColor="#4460ef"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <EditText
+        android:id="@+id/usernameEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Username/Email"
+        android:textColor="#717171"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignIn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="276dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColor="#717171"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="96dp"
+        android:background="#4460ef"
+        android:fontFamily="sans-serif"
+        android:text="Sign In"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/backgroundPurple"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/box"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/whiteBackground"
+        android:layout_width="430dp"
+        android:layout_height="420dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/box1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="230dp"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/usernameEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toEndOf="@+id/backgroundPurple" />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="115dp"
+        android:text="Department"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toEndOf="@+id/name" />
+
+
+    <TextView
+        android:id="@+id/heartrate1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginRight="228dp"
+        android:text="Heart Rate"
+
+        android:textColor="#355ad4"
+
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundPurple" />
+
+    <TextView
+        android:id="@+id/heartRateIdeal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="125dp"
+        android:text="Ideal :60 to 100 beats per min"
+        android:textColor="#717171"
+        android:textSize="19sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/whiteBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/respiration"
+
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="Respiration"
+        android:textColor="#355ad4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundPurple" />
+
+    <TextView
+        android:id="@+id/respirationRate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="165dp"
+        android:text="Ideal :60 to 100 beats per min"
+        android:textColor="#717171"
+        android:textSize="19sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/whiteBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:id="@+id/bloodSugar"
+
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="Blood Sugar"
+        android:textColor="#355ad4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundPurple" />
+
+    <TextView
+        android:id="@+id/bloodSugarrate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="135dp"
+        android:text="Ideal :60 to 100 beats per min"
+        android:textColor="#717171"
+        android:textSize="19sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/whiteBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respirationRate"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/bloodPressure"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="Blood Pressure"
+        android:textColor="#355ad4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodSugar" />
+
+    <TextView
+        android:id="@+id/bloodPressureRate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="135dp"
+        android:text="Ideal :60 to 100 beats per min"
+        android:textColor="#717171"
+        android:textSize="19sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/whiteBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respirationRate"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/bodytemp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="Blood Temp"
+        android:textColor="#355ad4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundPurple" />
+
+    <TextView
+        android:id="@+id/bodyTempRate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="135dp"
+        android:text="Ideal :60 to 100 beats per min"
+        android:textColor="#717171"
+        android:textSize="19sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/whiteBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respirationRate"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/OxygenSaturation"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="Oxygensaturation"
+        android:textColor="#355ad4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundPurple" />
+
+    <TextView
+        android:id="@+id/oxygenRate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="190dp"
+
+        android:layout_marginBottom="135dp"
+        android:text="Ideal :60 to 100 beats per min"
+        android:textColor="#717171"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/whiteBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respirationRate"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/cholestrol"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="Cholestrol"
+        android:textColor="#355ad4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backgroundPurple" />
+
+    <TextView
+        android:id="@+id/cholestrolrate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="135dp"
+        android:text="Ideal :60 to 100 beats per min"
+        android:textColor="#717171"
+
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/whiteBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respirationRate"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
